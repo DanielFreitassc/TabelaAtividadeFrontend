@@ -19,8 +19,7 @@ const Tabela = ({products}) => {
                     <td>{prod.nome}</td>
                     <td>{prod.preco}</td>
                     <td>{prod.estoque}</td>
-                    <td><button>Editar</button><button>Excluir</button></td>
-                    <td></td>    
+                    <td><button>Editar</button><button>Excluir</button></td> 
                 </tr>
                 
             ))}
