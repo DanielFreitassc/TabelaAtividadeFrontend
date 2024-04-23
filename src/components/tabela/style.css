@@ -1,0 +1,16 @@
+.tableHead {
+    background-color:#4cb050;
+    color: white;
+}
+.table {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+
+th,td {
+    padding: 10px;
+}
