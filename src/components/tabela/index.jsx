@@ -1,6 +1,6 @@
 import "./style.css"
 
-const Tabela = ({products}) => {
+const Tabela = ({products, editProduct, deleteProduct}) => {
     return (
         <table className="table">
         <thead>
@@ -16,10 +16,14 @@ const Tabela = ({products}) => {
             {products.map((prod) => (
                 <tr className="tableRow" key={prod.id}>
                     <td>{prod.id}</td>
-                    <td>{prod.nome}</td>
-                    <td>{prod.preco}</td>
-                    <td>{prod.estoque}</td>
-                    <td><button>Editar</button><button>Excluir</button></td> 
+                    <td>{prod.name}</td>
+                    <td>{prod.price}</td>
+                    <td>{prod.stock}</td>
+                    <td>
+                        <button onClick={() => editProduct(prod.id)}>Editar</button>
+                        <button onClick={() => deleteProduct(prod.id)}>Deletar</button>
+                    </td>
+                     
                 </tr>
                 
             ))}
